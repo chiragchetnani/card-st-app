@@ -212,7 +212,7 @@ if option == "Capture":
 
         with st.spinner("⏳ Extracting details..."):
             try:
-                response = requests.post("http://127.0.0.1:8000/upload/", files={"file": img_byte_arr})
+                response = requests.post("http://34.60.231.140/:8000/upload/", files={"file": img_byte_arr})
                 response.raise_for_status()
                 extracted_data = response.json()
             except requests.exceptions.RequestException as e:
